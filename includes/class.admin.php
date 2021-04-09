@@ -43,20 +43,22 @@ if ( !class_exists( 'lbkFc_Admin' ) ) {
          */
         public function register_lbk_fc_general_settings() { 
             // Register all settings for general settings page 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_gfx'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_phone'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_phone_show'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_zalo'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_zalo_show'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_mess'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_mess_show'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_fb'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_fb_show'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_insta'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_insta_show'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_twitter'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_twitter_show'); 
-            register_setting( 'lbk_fc_settings', 'lbk_fc_position'); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_gfx' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_phone' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_phone_show' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_zalo' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_zalo_show' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_mess' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_mess_show' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_fb' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_fb_show' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_insta' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_insta_show' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_twitter' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_twitter_show' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_position' ); 
+            register_setting( 'lbk_fc_settings', 'lbk_fc_lightbox' );
+            register_setting( 'lbk_fc_settings', 'lbk_fc_lightbox_show' );
         }
 
         /**

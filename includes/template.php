@@ -38,70 +38,86 @@ function lbk_fc_template() {
                         <span class="lbk-zalo-inner">
                             <a href="<?php echo $zalo ?>">
                                 <span class="contain-img">
-                                    <img src="<?php echo get_link_img('zalo.svg'); ?>">
+                                    <img src="<?php echo lbk_get_link_img('zalo.svg'); ?>">
                                 </span>
                             </a>
                             <span class="mobile">Zalo</span>
                         </span>
                     </div>
                     <?php } ?>
+
                     <?php if ( get_option( 'lbk_fc_mess_show' ) ) { ?>
                     <div class="lbk-mess-wrapper cols">
                         <span class="lbk-mess-inner">
                             <a href="<?php echo $messenger ?>">
                                 <span class="contain-img">
-                                    <img src="<?php echo get_link_img('messenger.svg'); ?>">
+                                    <img src="<?php echo lbk_get_link_img('messenger.svg'); ?>">
                                 </span>
                             </a>
                             <span class="mobile">Messenger</span>
                         </span>
                     </div>
                     <?php } ?>
+
                     <?php if ( get_option( 'lbk_fc_phone_show' ) ) { ?>
                     <div class="lbk-phone-wrapper cols">
                         <span class="lbk-phone-inner">
                             <a href="tel: <?php echo str_replace( '.', '', $phone ); ?>">
                                 <span class="contain-img">
-                                    <img src="<?php echo get_link_img('phone.svg'); ?>">
+                                    <img src="<?php echo lbk_get_link_img('phone.svg'); ?>">
                                 </span>
                                 <span class="mobile">Phone</span>
                             </a>
                         </span>
                     </div>
                     <?php } ?>
+
                     <?php if ( get_option( 'lbk_fc_fb_show' ) ) { ?>
                     <div class="lbk-fb-wrapper cols">
                         <span class="lbk-fb-inner">
                             <a href="<?php echo $facebook ?>">
                                 <span class="contain-img">
-                                    <img src="<?php echo get_link_img('facebook.svg'); ?>">
+                                    <img src="<?php echo lbk_get_link_img('facebook.svg'); ?>">
                                 </span>
                                 <span class="mobile">Facebook</span>
                             </a>
                         </span>
                     </div>
                     <?php } ?>
+
                     <?php if ( get_option( 'lbk_fc_insta_show' ) ) { ?>
                     <div class="lbk-insta-wrapper cols">
                         <span class="lbk-insta-inner">
                             <a href="<?php echo $instagram ?>">
                                 <span class="contain-img">
-                                    <img src="<?php echo get_link_img('instagram.svg'); ?>">
+                                    <img src="<?php echo lbk_get_link_img('instagram.svg'); ?>">
                                 </span>
                             </a>
                             <span class="mobile">Instagram</span>
                         </span>
                     </div>
                     <?php } ?>
+
                     <?php if ( get_option( 'lbk_fc_twitter_show' ) ) { ?>
                     <div class="lbk-twitter-wrapper cols">
                         <span class="lbk-twitter-inner">
                             <a href="<?php echo $twitter ?>">
                                 <span class="contain-img">
-                                    <img src="<?php echo get_link_img('twitter.svg'); ?>">
+                                    <img src="<?php echo lbk_get_link_img('twitter.svg'); ?>">
                                 </span>
                             </a>
                             <span class="mobile">Twitter</span>
+                        </span>
+                    </div>
+                    <?php } ?>
+
+                    <?php if( get_option( 'lbk_fc_lightbox_show' ) ) { ?>
+                    <div class="lbk-lightbox-wrapper cols">
+                        <span class="lbk-lightbox-inner">
+                            <span class="contain-img">
+                                <img src="<?php echo lbk_get_link_img('form.svg'); ?>">
+                            </span>
+                            <span class="mobile">Form liên hệ</span>
                         </span>
                     </div>
                     <?php } ?>
@@ -109,6 +125,15 @@ function lbk_fc_template() {
             </div>
         </div>
     </div>
+
+    <?php if( get_option( 'lbk_fc_lightbox_show' ) ) { ?>
+    <div id="lbk-fc-lightbox">
+        <div class="lbk-lightbox">
+            <h3>Đăng ký nhận tư vấn</h3>
+            <?php echo do_shortcode( get_option( 'lbk_fc_lightbox' ) ); ?>
+        </div>
+    </div>
+    <?php } ?>
     
 <?php }
 add_action( 'wp_footer', 'lbk_fc_template', 188 );

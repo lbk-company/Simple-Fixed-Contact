@@ -32,27 +32,31 @@
                 <tbody>
                     <tr>
                         <?php echo lbkFc_Function::form_text_input( 'lbk_fc_phone', __( 'Phone number', 'lbk-fc' ), get_option( 'lbk_fc_phone' ) ) ?>
-                        <?php echo form_checkbox( 'lbk_fc_phone_show', 'Show', get_option( 'lbk_fc_phone_show' ) ); ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_phone_show', 'Show', get_option( 'lbk_fc_phone_show' ) ); ?>
                     </tr>
                     <tr>
                         <?php echo lbkFc_Function::form_text_input( 'lbk_fc_zalo', __( 'Link Zalo', 'lbk-fc' ), get_option( 'lbk_fc_zalo' ) ) ?>
-                        <?php echo form_checkbox( 'lbk_fc_zalo_show', 'Show', get_option( 'lbk_fc_zalo_show' ) ); ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_zalo_show', 'Show', get_option( 'lbk_fc_zalo_show' ) ); ?>
                     </tr>
                     <tr>
                         <?php echo lbkFc_Function::form_text_input( 'lbk_fc_mess', __( 'Link Messenger', 'lbk-fc' ), get_option( 'lbk_fc_mess' ) ) ?>
-                        <?php echo form_checkbox( 'lbk_fc_mess_show', 'Show', get_option( 'lbk_fc_mess_show' ) ); ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_mess_show', 'Show', get_option( 'lbk_fc_mess_show' ) ); ?>
                     </tr>
                     <tr>
                         <?php echo lbkFc_Function::form_text_input( 'lbk_fc_fb', __( 'Link Facebook', 'lbk-fc' ), get_option( 'lbk_fc_fb' ) ) ?>
-                        <?php echo form_checkbox( 'lbk_fc_fb_show', 'Show', get_option( 'lbk_fc_fb_show' ) ); ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_fb_show', 'Show', get_option( 'lbk_fc_fb_show' ) ); ?>
                     </tr>
                     <tr>
                         <?php echo lbkFc_Function::form_text_input( 'lbk_fc_insta', __( 'Link Instagram', 'lbk-fc' ), get_option( 'lbk_fc_insta' ) ) ?>
-                        <?php echo form_checkbox( 'lbk_fc_insta_show', 'Show', get_option( 'lbk_fc_insta_show' ) ); ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_insta_show', 'Show', get_option( 'lbk_fc_insta_show' ) ); ?>
                     </tr>
                     <tr>
                         <?php echo lbkFc_Function::form_text_input( 'lbk_fc_twitter', __( 'Link Twitter', 'lbk-fc' ), get_option( 'lbk_fc_twitter' ) ) ?>
-                        <?php echo form_checkbox( 'lbk_fc_twitter_show', 'Show', get_option( 'lbk_fc_twitter_show' ) ); ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_twitter_show', 'Show', get_option( 'lbk_fc_twitter_show' ) ); ?>
+                    </tr>
+                    <tr>
+                        <?php echo lbkFc_Function::form_text_input( 'lbk_fc_lightbox', __( 'Shortcode Contact Form 7', 'lbk-fc' ), get_option( 'lbk_fc_lightbox' ) ) ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_lightbox_show', 'Show', get_option( 'lbk_fc_lightbox_show' ) ); ?>
                     </tr>
                     <tr>
                         <td><label for="lbk_fc_position"><?php _e( 'Position', 'lbk-fc' ); ?></label></td>
