@@ -32,6 +32,7 @@ if ( !class_exists( 'lbkFc_Admin' ) ) {
             add_action( 'admin_init', array( $this, 'register_lbk_fc_general_settings') );
             // add_action( 'init', array( $this, 'registerMetaboxes' ), 99 );
             // add_action( 'plugin_action_links_' . LBK_FC_BASE_NAME, array( $this, 'pluginActionLinks' ), 10, 2 );
+            add_filter( 'plugin_action_links', array( $this, 'add_settings_link' ), 10, 2 );
         }
 
         /**
@@ -130,6 +131,26 @@ if ( !class_exists( 'lbkFc_Admin' ) ) {
          */
         public function page() {
             include LBK_FC_PATH . 'includes/inc.admin-options-page.php';
+        }
+
+        /**
+         * Add a link to the settings page
+         * 
+         * @access public
+         * @since 1.0
+         * @static
+         */
+        public function add_settings_link( $links, $file ) {
+            if (
+                strrpos( $file, '/lbk-fixed-contact.php' ) === ( strlen( $file ) - 22 ) &&
+                current_user_can( 'manage_options' )
+            ) {
+                $settings_link = sprintf( '<a href="%s">%s</a>', admin_url( 'options-general.php?page=lbk-fixed-contact' ), __( 'Settings', 'lbk-fc' ) );
+                $links = (array) $links;
+                $links['lbksvc_settings_link'] = $settings_link;
+            }
+
+            return $links;
         }
     }
 
