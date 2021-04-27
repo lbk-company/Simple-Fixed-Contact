@@ -2,9 +2,9 @@
 Contributors: lbksolution
 Donate link: https://lbk.vn/
 Tags: simple fixed contact, lbk-fc
-Requires at least: 1.1.2
+Requires at least: 1.2.2
 Tested up to: 5.7
-Stable tag: 1.1.2
+Stable tag: 1.2.2
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -45,6 +45,9 @@ It is needless to say.
 * fixed js
 * edit style
 
+= 1.2.0 04/09/2021 =
+* Update link
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -52,3 +55,6 @@ It is needless to say.
 
 = 1.1 =
 * Update lightbox form
+
+= 1.2 =
+* Update link

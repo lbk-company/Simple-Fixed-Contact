@@ -13,6 +13,7 @@ function lbk_fc_template() {
     $instagram = get_option( 'lbk_fc_insta' );
     $twitter = get_option( 'lbk_fc_twitter' );
     $position = get_option( 'lbk_fc_position' );
+    $link = get_option( 'lbk_fc_link' );
 
     if ( empty($position) ) $position = 'bottom-right';
 
@@ -104,6 +105,19 @@ function lbk_fc_template() {
                             <a href="<?php echo $twitter ?>">
                                 <span class="contain-img">
                                     <img src="<?php echo lbk_get_link_img('twitter.svg'); ?>">
+                                </span>
+                            </a>
+                            <span class="mobile">Twitter</span>
+                        </span>
+                    </div>
+                    <?php } ?>
+
+                    <?php if ( get_option( 'lbk_fc_link_show' ) ) { ?>
+                    <div class="lbk-link-wrapper cols">
+                        <span class="lbk-link-inner">
+                            <a href="<?php echo $link ?>">
+                                <span class="contain-img">
+                                    <img src="<?php echo lbk_get_link_img('link.svg'); ?>">
                                 </span>
                             </a>
                             <span class="mobile">Twitter</span>

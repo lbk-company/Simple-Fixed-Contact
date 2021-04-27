@@ -7,14 +7,14 @@
  * @copyright 2021 LBK
  * @license GPL-2.0-or-later
  * @category plugin
- * @version 1.1.2
+ * @version 1.2.0
  * 
  * @wordpress-plugin
  * Plugin Name:       Simple Fixed Contact
  * Plugin URI:        https://lbk.vn/fixed-contact
  * Description:       Simple Fixed Contact always appear on the website
- * Version:           1.1.2
- * Requires at least: 1.1.2
+ * Version:           1.2.0
+ * Requires at least: 1.2.0
  * Requires PHP:      7.4
  * Author:            Briki
  * Author             URI: https://facebook.com/vuong.briki
@@ -51,7 +51,7 @@ if ( !class_exists('lbkFc') ) {
          * @since 1.0
          * @var string
          */
-        const VERSION = '1.1.2';
+        const VERSION = '1.2.0';
 
         /**
          * Stores the instance of this class

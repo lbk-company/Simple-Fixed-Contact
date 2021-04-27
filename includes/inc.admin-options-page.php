@@ -55,6 +55,10 @@
                         <?php echo lbk_form_checkbox( 'lbk_fc_twitter_show', 'Show', get_option( 'lbk_fc_twitter_show' ) ); ?>
                     </tr>
                     <tr>
+                        <?php echo lbkFc_Function::form_text_input( 'lbk_fc_link', __( 'Custom Link', 'lbk-fc' ), get_option( 'lbk_fc_link' ) ) ?>
+                        <?php echo lbk_form_checkbox( 'lbk_fc_link_show', 'Show', get_option( 'lbk_fc_link_show' ) ); ?>
+                    </tr>
+                    <tr>
                         <?php echo lbkFc_Function::form_text_input( 'lbk_fc_lightbox', __( 'Shortcode Contact Form 7', 'lbk-fc' ), get_option( 'lbk_fc_lightbox' ) ) ?>
                         <?php echo lbk_form_checkbox( 'lbk_fc_lightbox_show', 'Show', get_option( 'lbk_fc_lightbox_show' ) ); ?>
                     </tr>

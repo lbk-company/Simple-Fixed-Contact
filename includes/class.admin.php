@@ -60,6 +60,8 @@ if ( !class_exists( 'lbkFc_Admin' ) ) {
             register_setting( 'lbk_fc_settings', 'lbk_fc_position' ); 
             register_setting( 'lbk_fc_settings', 'lbk_fc_lightbox' );
             register_setting( 'lbk_fc_settings', 'lbk_fc_lightbox_show' );
+            register_setting( 'lbk_fc_settings', 'lbk_fc_link' );
+            register_setting( 'lbk_fc_settings', 'lbk_fc_link_show' );
         }
 
         /**
